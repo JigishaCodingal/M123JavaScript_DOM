@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <button onclick="f1()">Numbers Ascending Order</button>
+        <button onclick="f2()">Numbers Descending Order</button>
+        <button onclick="f3()">Strings Ascending Order</button>
+        <button onclick="f4()">Strings Descending Order</button>
+        <p id="i1"></p>
+        <p id="i2"></p>
+        <script>
+            var n=[7,8,1,0,2,6];
+            function f1(){
+                document.getElementById("i1").innerHTML="Before Sorting : "+n;
+                n.sort(function(a,b){return a-b});
+                document.getElementById("i2").innerHTML = "After Sorting : " + n;
+            }
+            var n = [7, 8, 1, 0, 2, 6]
+                function f2() {
+                    document.getElementById("i1").innerHTML = "Before Sorting : " + n;
+                    n.sort(function (a, b) { return b-a });
+                    document.getElementById("i2").innerHTML = "After Sorting : " + n;
+                }
+             var s = ['hello','how','are','you']
+                function f3() {
+                    document.getElementById("i1").innerHTML = "Before Sorting : " + s;
+                    n.sort();
+                    document.getElementById("i2").innerHTML = "After Sorting : " + s;
+                }
+                var s = ['hello', 'how', 'are', 'you']
+                    function f4() {
+                        document.getElementById("i1").innerHTML = "Before Sorting : " + s;
+                        n.sort().reverse();
+                        document.getElementById("i2").innerHTML = "After Sorting : " + s;
+                    }
+        </script>
+    </body>
+    
+</html>

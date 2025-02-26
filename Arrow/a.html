@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            try{
+            f1();
+            }
+            catch(e){
+                document.write(e+"<br>");
+            }
+            var x=20;
+            document.write(x+"<br>");
+            var y=String(x);
+            document.write(y + "<br>");
+
+            x ="50";
+            document.write(x + "<br>");
+            y = Number(x);
+            document.write(y + "<br>");
+
+
+            function f1(a,b,c){//a=5,b=1,c=8
+                ans=a+b+c;
+                return ans;
+            }
+            document.write(f1(5,1,8)+"<br>");
+
+            sum=(x,y,z)=>x+y+z;
+            document.write(sum(1, 2, 4) + "<br>");
+
+        </script>
+    </body>
+</html>

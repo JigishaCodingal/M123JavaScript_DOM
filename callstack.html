@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <p id="i1"></p>
+        <script>
+            function sum(a,b,c){
+                return a+b+c;//16
+            }
+            function avg(a,b,c){//4,9,3
+                x=sum(a,b,c);//4,9,3=16
+                ans=x/3;//5.33
+                return ans;
+            }
+
+            let Result=avg(4,9,3);
+            document.getElementById("i1").innerHTML=Result;
+        </script>
+    </body>
+</html>

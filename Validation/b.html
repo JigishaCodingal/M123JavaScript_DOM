@@ -1,0 +1,47 @@
+<html>
+<body><h1>Type conversion</h1>
+    <script>
+        var a,b,c;
+        a=34;
+        b=String(a); //'34'
+        c=Boolean(a);//34 is existing : true
+        document.write("a = "+a+" Data Type of a = "+typeof(a)+"<br>");
+        document.write("b = " + b + " Data Type of b = " + typeof (b) + "<br>");
+        //b: "34"
+        document.write("c = " + c + " Data Type of c = " + typeof (c) + "<br>");
+        
+        try{        f1(); }
+        catch(e){ document.write(e+"<br><br>");}
+
+        a = 1;
+        b = String(a);//"1"
+        c = Boolean(a);//1 : True, 0:False
+        document.write("a = " + a + " Data Type of a = " + typeof (a) + "<br>");
+        document.write("b = " + b + " Data Type of b = " + typeof (b) + "<br>");
+        document.write("c = " + c + " Data Type of c = " + typeof (c) + "<br>");
+
+        a = "";
+            b = Number(a);//3
+            c = Boolean(a);//"3" existing : True
+            document.write("a = " + a + " Data Type of a = " + typeof (a) + "<br>");
+            document.write("b = " + b + " Data Type of b = " + typeof (b) + "<br>");
+            document.write("c = " + c + " Data Type of c = " + typeof (c) + "<br>");
+        
+        a = true;
+            b = String(a);//'true'
+            c = Number(a);//1
+            document.write("a = " + a + " Data Type of a = " + typeof (a) + "<br>");
+            document.write("b = " + b + " Data Type of b = " + typeof (b) + "<br>");
+            document.write("c = " + c + " Data Type of c = " + typeof (c) + "<br>");
+
+        function add(a,b,c){//a=3,b=6,c=7
+            var c=a+b+c;
+            return c;
+        }
+        document.write(add(3,6,7)+"<br>");
+
+        sum=(x,y,z)=>x+y+z;
+        document.write(sum(3, 6, 7) + "<br>");
+    </script>
+</body>
+</html>

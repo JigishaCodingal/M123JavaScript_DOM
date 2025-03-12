@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Promise</h1>
+        <p id="i1"></p>
+        <script>
+         function disp(n){
+          document.getElementById("i1").innerHTML=n;
+         }
+        async function mult(a,b,c) {//a=3,b=8,c=1, async : consuming 
+          let result=await a*b*c;//process : production : await : producing
+          disp(result);
+        }
+        mult(3,8,1);
+        </script>
+    </body>
+</html>

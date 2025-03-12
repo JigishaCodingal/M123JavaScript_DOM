@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <p id="i1"></p>
+        <p id="i2"></p>
+        <p id="i3"></p>
+        <p id="i4"></p>
+        <script>
+            var x=10,y=2,z;     
+            
+            function f1(){
+                z = x + y;
+                document.getElementById("i1").innerHTML = z;
+            }
+            function f2(){
+                z = x - y;
+                document.getElementById("i2").innerHTML = z;
+            }
+            function f3(){
+                z = x * y;
+                document.getElementById("i3").innerHTML = z;
+            }
+            function f4(){
+                z = x / y;
+                document.getElementById("i4").innerHTML = z;
+            }
+            f1();
+            f2();
+            f3();
+            f4();
+           
+        </script>
+    </body>
+</html>

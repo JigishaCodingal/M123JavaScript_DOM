@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <script>
+            //loop : iteration / reapetition
+            //display hello 10 times
+
+            /*
+            1 
+            2
+            3
+            .
+            .
+            10
+            */
+            var i;
+            for(i=1;i<=10;i+=1){
+                document.write(i + " Hello<br>");
+            }
+
+            var day;
+            switch(new Date().getDay()){
+                case 0:day="Sunday"; break;
+                case 1: day = "Monday"; break;
+                case 2: day = "Tuesday"; break;
+                case 3: day = "Wednesday"; break;
+                case 4: day = "Thursday"; break;
+                case 5: day = "Friday"; break;
+                case 6: day = "Saturday"; break;
+                default: day = "Invalid day"; 
+            }
+            document.write(day+"<br>");
+
+
+            switch(2){
+
+                case 1:x="Hello";break;
+                case 2: x = "Good";break;
+                case 3: x = "Morning"; break;
+                default: x = "all"; 
+
+            }
+            document.write(x+"<br>");
+        </script>
+
+    </body>
+</html>

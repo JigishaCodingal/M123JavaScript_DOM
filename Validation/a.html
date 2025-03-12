@@ -1,0 +1,25 @@
+<html>
+     <body>    
+          <p id="i1"></p> 
+          <form name="form" onsubmit="f1()">     
+               Name: <input type="text" name="fname">     
+               Age: <input type="number" age="fage"> 
+               <input type="submit" value="submit">
+           </form>
+           <script>
+               function f1() {
+                    var x = document.forms["form"]["fname"].value;
+                    var y = document.forms["form"]["fage"].value;
+                    if (x == "") {
+                         //document.write("<br><br><br>Name must be filled out");
+                         //document.getElementById("i1").innerHTML= "<br><br><br>Name must be filled out";
+                         alert("Name must be filled out");
+
+                    }
+                    if (y == "") { document.write("<br><br><br>Age must be filled out"); }
+                    else
+                    { document.write("<br><br><br>To log in, your age must be 18 or more"); }
+               }
+          </script>
+</body>
+</html>

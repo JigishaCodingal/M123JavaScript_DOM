@@ -1,0 +1,35 @@
+ 
+
+  html {
+      height: 100%;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  h1 {background-color: yellow;
+      text-align: center;
+  }
+
+  form {
+      max-width: 300px;
+      margin: 0 auto;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+  }
+
+  div {
+      margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  button {
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+  }
+
+  #message {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 10px;
+      
+  }
